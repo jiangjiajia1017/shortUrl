@@ -61,7 +61,7 @@ public class RecordServiceImpl extends ServiceImpl<RecordMapper, Record> impleme
             LambdaQueryWrapper<Record> queryWrapper = new LambdaQueryWrapper<>();
             queryWrapper.eq(Strings.isNotEmpty(randomString), Record::getCode, randomString);
             Record record = this.getOne(queryWrapper);
-            System.out.println(record);
+          //  System.out.println(record);
             if (record == null) {
                 $flag = false;
             }

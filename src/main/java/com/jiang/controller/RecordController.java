@@ -25,7 +25,7 @@ public class RecordController {
     @GetMapping("{code}")
     public void index(@PathVariable String code, HttpServletResponse response) {
         Record record = recordService.getLongUrlByCode(code);
-        System.out.println(record);
+        //System.out.println(record);
         response.setStatus(301);
         response.setHeader("Location", record.getLongUrl());
     }
