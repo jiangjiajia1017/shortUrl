@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/short_domain?serverTimezone=UTC
+      username: root
+      password: root
+server:
+  port: 8080
+
+# ip 白名单配置
+allow:
+  ips: [127.0.0.1,192.168.0.1]
+  open: true
