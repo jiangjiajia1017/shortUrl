@@ -16,6 +16,12 @@ public class R {
         this.data = data;
     }
 
+    public R(boolean flag, Object data, String message) {
+        this.flag = flag;
+        this.data = data;
+        this.message = message;
+    }
+
     public R(boolean flag) {
         this.flag = flag;
     }

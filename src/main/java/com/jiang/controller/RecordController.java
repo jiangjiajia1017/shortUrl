@@ -38,7 +38,7 @@ public class RecordController {
     @PostMapping()
     public R add(@RequestParam(value = "longUrl", required = true) String longUrl) {
         Record record = recordService.getCodeByLongUrl(longUrl);
-        return new R(true, record.getCode());
+        return new R(true, record.getCode(),"success");
     }
 
 }
