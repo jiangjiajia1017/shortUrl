@@ -15,85 +15,85 @@ public class Result {
 
 
     /**
-     * 返回成功
+     * 返回success
      */
     public static Result success(List<Object> data, long count) {
         Result result = new Result();
-        result.setCode(0);//成功
-        result.setMsg("成功");//提示语
+        result.setCode(0);//success
+        result.setMsg("success");//提示语
         result.setData(data);
         return result;
     }
 
     /**
-     * 返回成功
+     * 返回success
      */
     public static Result success(List<Object> data) {
         Result result = new Result();
-        result.setCode(0);//成功
-        result.setMsg("成功");//提示语
+        result.setCode(0);//success
+        result.setMsg("success");//提示语
         result.setData(data);
         return result;
     }
 
     /**
-     * 返回成功
+     * 返回success
      */
     public static Result successForPage(List<Object> data, Integer count) {
         Result result = new Result();
-        result.setCode(0);//成功
-        result.setMsg("成功");//提示语
+        result.setCode(0);//success
+        result.setMsg("success");//提示语
         result.setData(data);
         return result;
     }
 
     /**
-     * 返回成功
+     * 返回success
      */
     public static Result success() {
         Result result = new Result();
-        result.setCode(0);//成功
-        result.setMsg("成功");//提示语
+        result.setCode(0);//success
+        result.setMsg("success");//提示语
         return result;
     }
 
     /**
-     * 返回成功
+     * 返回success
      */
     public static Result success(Object object) {
         Result result = new Result();
-        result.setCode(0);//成功
-        result.setMsg("成功");//提示语
+        result.setCode(0);//success
+        result.setMsg("success");//提示语
         result.setData(object);//返回内容
         return result;
     }
 
     /**
-     * 返回失败
+     * 返回failed
      */
     public static Result error() {
         Result result = new Result();
-        result.setCode(1);//失败
-        result.setMsg("失败");//提示语
+        result.setCode(1);//failed
+        result.setMsg("failed");//提示语
         return result;
     }
 
     /**
-     * 返回失败
+     * 返回failed
      */
     public static Result error(String msg) {
         Result result = new Result();
-        result.setCode(1);//失败
+        result.setCode(1);//failed
         result.setMsg(msg);//提示语
         return result;
     }
 
     /**
-     * 返回失败
+     * 返回failed
      */
     public static Result error(int code, String msg) {
         Result result = new Result();
-        result.setCode(code);//失败
+        result.setCode(code);//failed
         result.setMsg(msg);//提示语
         return result;
     }
