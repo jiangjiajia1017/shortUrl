@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class E {
 
     @ExceptionHandler
-    public R handleException(Exception e){
+    public Result handleException(Exception e) {
         e.printStackTrace();
-        return new R("服务器错误，请稍后重试！");
+        return Result.error("服务器错误，请稍后重试！");
     }
 }
